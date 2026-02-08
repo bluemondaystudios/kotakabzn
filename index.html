@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kota Kabzn | Jane-Furse</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --brown: #5a2e1d;
+      --orange: #f4a100;
+      --green: #1f5d3b;
+      --red: #c62828;
+      --white: #ffffff;
+      --dark: #1a1a1a;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--white);
+      color: var(--dark);
+      line-height: 1.6;
+    }
+
+    /* HEADER */
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 1.2rem;
+      border-bottom: 1px solid rgba(0,0,0,0.08);
+    }
+
+    .brand-logo {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      object-fit: contain;
+      background: #fff;
+      padding: 10px;
+      border: 2px solid rgba(0,0,0,0.08);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+    }
+
+    nav a {
+      margin-left: 1rem;
+      text-decoration: none;
+      font-size: 0.95rem;
+      color: var(--dark);
+      font-weight: 500;
+    }
+
+    /* HERO */
+    .hero {
+      padding: 2.5rem 1.2rem;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-family: 'Anton', sans-serif;
+      font-size: 2.4rem;
+      letter-spacing: 1px;
+      color: var(--brown);
+      margin-bottom: 0.5rem;
+    }
+
+    .hero p {
+      font-size: 1rem;
+      color: #444;
+      max-width: 420px;
+      margin: 0 auto;
+    }
+
+    /* MENU */
+    .menu {
+      padding: 2rem 1.2rem;
+    }
+
+    .menu h2 {
+      font-family: 'Anton', sans-serif;
+      font-size: 1.6rem;
+      color: var(--green);
+      margin-bottom: 1rem;
+    }
+
+    .menu-item {
+      display: flex;
+      justify-content: space-between;
+      padding: 0.9rem 0;
+      border-bottom: 1px solid rgba(0,0,0,0.08);
+      font-size: 0.95rem;
+    }
+
+    .menu-item span {
+      font-weight: 600;
+    }
+
+    .menu-item.hot p {
+      color: var(--red);
+      font-weight: 600;
+    }
+
+    /* SPECIAL */
+    .special {
+      background: var(--orange);
+      color: #000;
+      padding: 1.5rem 1.2rem;
+      margin: 2rem 1.2rem;
+      border-radius: 12px;
+      text-align: center;
+      font-weight: 600;
+    }
+
+    /* CONTACT */
+    .contact {
+      padding: 2rem 1.2rem;
+    }
+
+    .contact h2 {
+      font-family: 'Anton', sans-serif;
+      font-size: 1.4rem;
+      margin-bottom: 0.8rem;
+      color: var(--brown);
+    }
+
+    .contact p {
+      margin-bottom: 0.5rem;
+      font-size: 0.95rem;
+    }
+
+    /* ORDER BUTTON */
+    .order-btn {
+      position: fixed;
+      bottom: 18px;
+      right: 18px;
+      background: var(--green);
+      color: var(--white);
+      padding: 0.9rem 1.4rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      box-shadow: 0 10px 24px rgba(0,0,0,0.2);
+      font-size: 0.95rem;
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 1.2rem;
+      font-size: 0.85rem;
+      color: #666;
+    }
+
+    /* RESPONSIVE */
+    @media (min-width: 768px) {
+      .brand-logo {
+        width: 140px;
+        height: 140px;
+      }
+
+      .hero h1 {
+        font-size: 3rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <img src="static/images/logo.png" alt="Kota Kabzn Logo" class="brand-logo">
+    <nav>
+      <a href="#menu">Menu</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1>THE BEST KOTA IN JANE-FURSE</h1>
+    <p>Fresh. Heavy. Honest flavour.<br>
+       Kota Kabzn — serving since 2019.</p>
+  </section>
+
+  <!-- MENU -->
+  <section class="menu" id="menu">
+    <h2>Menu</h2>
+
+    <div class="menu-item">
+      <p>Magongwa Kota (Toasted bread, Seasoned chips, Crisp lettuce, Fried Chicken polony and our Kabzn sauces)</p>
+      <span>R25</span>
+    </div>
+
+    <div class="menu-item">
+      <p>T-SHU & Pantiti Kota</p>
+      <span>R55</span>
+    </div>
+
+    <div class="menu-item hot">
+      <p>Chepi Chepi Kota (Toasted bread, Seasoned chips, Crisp lettuce, Fried Polony & Russian, Double Gouda cheese, Double beef patty, Double fried egg and our Kabzn sauces)</p>
+      <span>R75</span>
+    </div>
+
+    <div class="menu-item">
+      <p>Brenda Fassie Kota (Toasted bread, Seasoned chips, Crisp lettuce, Fried Chicken polony,Beef Patty, Fried egg, Fried Russian, Gouda Cheese and our Kabzn sauces)</p>
+      <span>R65</span>
+    </div>
+
+    <div class="menu-item">
+      <p>Jack Mabaso Kota (Toasted bread, Seasoned chips, Crisp lettuce, Fried Chicken polony, Fried Russian and our Kabzn sauces)</p>
+      <span>R35</span>
+    </div>
+
+    <div class="menu-item">
+      <p>Maga T Kota</p>
+      <span>R45</span>
+    </div>
+
+    <p style="margin-top:1rem; font-size:0.85rem; color:#666;">
+      *NB: All kotas include atchaar unless stated otherwise.
+    </p>
+  </section>
+
+  <!-- SPECIAL -->
+  <div class="special">
+    🔥 Ask about today’s special at the counter
+  </div>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <h2>Find Us</h2>
+    <p>📍 Jane-Furse, 1085</p>
+    <p>📞 +27 76 156 3365</p>
+    <p>📲 WhatsApp orders available</p>
+  </section>
+
+  <!-- ORDER BUTTON -->
+  <a href="https://wa.me/27761563365" class="order-btn">Order on WhatsApp</a>
+
+  <!-- FOOTER -->
+  <footer>
+    © 2026 Blue Monday Studios. All rights reserved..
+  </footer>
+
+</body>
+</html>
